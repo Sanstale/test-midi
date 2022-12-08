@@ -15,7 +15,7 @@ PIXELS_NUM = 60  # 灯数
 BRIGHTNESS = 200
 
 np = NeoPixel(NEOPIXEL_PIN, PIXELS_NUM)
-np.brightness(NEOPIXEL_PIN, BRIGHTNESS)
+# np.brightness(NEOPIXEL_PIN, BRIGHTNESS)
 
 # #NeoPixel.brightness(NEOPIXEL_PIN, BRIGHTNESS)
 n = 0

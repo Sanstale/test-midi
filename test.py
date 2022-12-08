@@ -44,6 +44,9 @@ def send_msg2(song):
 
     # print("bpm "+str(bpm))
 
+def file(song):
+    mid = mido.MidiFile(song)
+    print(mid)
 def rm_odd(list):
     for i in range(len(list) - 2):
         list.pop(i)
@@ -54,10 +57,12 @@ def rm_odd(list):
 
 if __name__ == '__main__':
     # setup()    实际操作时去掉
-    song = input('song?') + '.mid'
+    song = ("test.mid")#input('song?') + '.mid'
     method=input('method')
     if method=='1':
         send_msg(song)
+    elif method=="3":
+        file(song)
     else:
         send_msg2(song)
     rm_odd(note)
